@@ -1,0 +1,6 @@
+<app-card>
+    <button [class.active]="selected" (click)="onSelectUser(user.id)">
+        <img [src]="imagePath()" [alt]="user.name"> <!-- added data using property binding -->
+        <span>{{user.name}}</span> <!-- added data using string interpolation -->
+    </button>
+</app-card>
